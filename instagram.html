@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" type="image/x-icon" href="./assets/img/instagram-favicon.png">
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/zuck.js/1.3.0/zuck.min.css"
+    integrity="sha512-uMQwakS6MojpJv2SmOA2P5EeR+1wbJNUsrr6MyKxdWencgXyM1CgF2BvgouRcNAgSJPoJG9t9Orhvcsp+GKPkg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./assets/css/instagram.css">
+
+  <title>İnstagram</title>
+</head>
+
+<body>
+  <div class="insta-logo-header-area">
+    <div class="logo">
+      <a data-click-state="0" href="javascript:;">
+        <img src="./assets/img/insta-logo.png" alt="">
+        <i class="fa fa-angle-down" aria-hidden="true"></i>
+      </a>
+      <div class="logo-modal-area">
+        <div class="the-ones-you-fallow-area">
+          <p>Takip</p>
+          <svg aria-label="Takip" class="_ab6-" color="#262626" fill="#262626" height="16" role="img"
+            viewBox="0 0 24 24" width="16">
+            <path d="M19.006 8.252a3.5 3.5 0 1 1-3.499-3.5 3.5 3.5 0 0 1 3.5 3.5Z" fill="none" stroke="currentColor"
+              stroke-miterlimit="10" stroke-width="2"></path>
+            <path d="M22 19.5v-.447a4.05 4.05 0 0 0-4.05-4.049h-4.906a4.05 4.05 0 0 0-4.049 4.049v.447" fill="none"
+              stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+            <polyline fill="none" points="8.003 9.198 4.102 13.099 2.003 11" stroke="currentColor"
+              stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polyline>
+          </svg>
+        </div>
+        <div class="my-favorites-area">
+          <p>Favoriler</p>
+          <svg aria-label="Favoriler" class="_ab6-" color="#262626" fill="#262626" height="16" role="img"
+            viewBox="0 0 24 24" width="16">
+            <path
+              d="M18.18 22.51a.99.99 0 0 1-.513-.142L12 18.975l-5.667 3.393a1 1 0 0 1-1.492-1.062l1.37-6.544-4.876-4.347a.999.999 0 0 1 .536-1.737l6.554-.855 2.668-5.755a1 1 0 0 1 1.814 0l2.668 5.755 6.554.855a.999.999 0 0 1 .536 1.737l-4.876 4.347 1.37 6.544a1 1 0 0 1-.978 1.205ZM12 16.81a1 1 0 0 1 .514.142l4.22 2.528-1.021-4.873a.998.998 0 0 1 .313-.952l3.676-3.276-4.932-.644a1 1 0 0 1-.778-.57L12 4.867l-1.992 4.297a1 1 0 0 1-.779.57l-4.931.644 3.676 3.276a.998.998 0 0 1 .313.951l-1.02 4.873 4.22-2.527A1 1 0 0 1 12 16.81Z">
+            </path>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="header-menu-area">
+      <div class="add-post-area">
+        <svg aria-label="Ana Sayfa" class="_ab6-" color="#262626" fill="#262626" height="24" role="img"
+          viewBox="0 0 24 24" width="24">
+          <path
+            d="M2 12v3.45c0 2.849.698 4.005 1.606 4.944.94.909 2.098 1.608 4.946 1.608h6.896c2.848 0 4.006-.7 4.946-1.608C21.302 19.455 22 18.3 22 15.45V8.552c0-2.849-.698-4.006-1.606-4.945C19.454 2.7 18.296 2 15.448 2H8.552c-2.848 0-4.006.699-4.946 1.607C2.698 4.547 2 5.703 2 8.552Z"
+            fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+          <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            x1="6.545" x2="17.455" y1="12.001" y2="12.001"></line>
+          <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            x1="12.003" x2="12.003" y1="6.545" y2="17.455"></line>
+        </svg>
+      </div>
+      <div class="notification-area">
+        <svg aria-label="Beğen" class="_ab6-" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24"
+          width="24">
+          <path
+            d="M16.792 3.904A4.989 4.989 0 0 1 21.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 0 1 4.708-5.218 4.21 4.21 0 0 1 3.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 0 1 3.679-1.938m0-2a6.04 6.04 0 0 0-4.797 2.127 6.052 6.052 0 0 0-4.787-2.127A6.985 6.985 0 0 0 .5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 0 0 3.518 3.018 2 2 0 0 0 2.174 0 45.263 45.263 0 0 0 3.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 0 0-6.708-7.218Z">
+          </path>
+        </svg>
+      </div>
+      <div class="message-area">
+        <svg aria-label="Messenger" class="_ab6-" color="#262626" fill="#262626" height="24" role="img"
+          viewBox="0 0 24 24" width="24">
+          <path
+            d="M12.003 2.001a9.705 9.705 0 1 1 0 19.4 10.876 10.876 0 0 1-2.895-.384.798.798 0 0 0-.533.04l-1.984.876a.801.801 0 0 1-1.123-.708l-.054-1.78a.806.806 0 0 0-.27-.569 9.49 9.49 0 0 1-3.14-7.175 9.65 9.65 0 0 1 10-9.7Z"
+            fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="1.739"></path>
+          <path
+            d="M17.79 10.132a.659.659 0 0 0-.962-.873l-2.556 2.05a.63.63 0 0 1-.758.002L11.06 9.47a1.576 1.576 0 0 0-2.277.42l-2.567 3.98a.659.659 0 0 0 .961.875l2.556-2.049a.63.63 0 0 1 .759-.002l2.452 1.84a1.576 1.576 0 0 0 2.278-.42Z"
+            fill-rule="evenodd"></path>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <div id="stories"></div>
+
+
+  <div class="main">
+    <div class="post-area">
+      <div class="profie-information-area">
+        <div class="profile">
+          <div class="profile-image-area item-preview">
+            <img src="./assets/img/gs-profile.jpg" alt="">
+          </div>
+          <div class="profile-name-area">
+            <p>Galatasaray</p>
+          </div>
+        </div>
+        <div class="share-modal-area">
+          <svg aria-label="Diğer seçenekler" class="_ab6-" color="#262626" fill="#262626" height="24" role="img"
+            viewBox="0 0 24 24" width="24">
+            <circle cx="12" cy="12" r="1.5"></circle>
+            <circle cx="6" cy="12" r="1.5"></circle>
+            <circle cx="18" cy="12" r="1.5"></circle>
+          </svg>
+        </div>
+        <div class="share-modal-content">
+          <div class="share-modal-all-area">
+            <div class="share-modal-body">
+              <ul class="list-unstyled">
+                <li>
+                  <a class="complain" href="#">Şikayet Et</a>
+                </li>
+                <li>
+                  <a class="complain" href="#">Takibi Bırak</a>
+                </li>
+                <li>
+                  <a href="#">Favorilere ekle</a>
+                </li>
+                <li>
+                  <a href="#">Gönderiye git</a>
+                </li>
+                <li>
+                  <a href="#">Paylaş...</a>
+                </li>
+                <li>
+                  <a href="#">Bağlantıyı Kopyala</a>
+                </li>
+                <li>
+                  <a href="#">Sitene Göm</a>
+                </li>
+                <li>
+                  <a href="#">Bu hesap hakkında</a>
+                </li>
+                <li>
+                  <a href="#">İptal</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="post-body">
+        <div class="post-img-area">
+          <i class="fa fa-heart d-none" aria-hidden="true"></i>
+          <img id="target" src="./assets/img/post-gs.jpg" alt="">
+        </div>
+        <div class="post-information-all-area">
+          <div class="post-like-save">
+            <div class="like-commant-share-buttons">
+              <div class="like-button">
+                <svg aria-label="Beğen" class="_ab6- none-like" color="#262626" fill="#262626" height="24" role="img"
+                  viewBox="0 0 24 24" width="24">
+                  <path
+                    d="M16.792 3.904A4.989 4.989 0 0 1 21.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 0 1 4.708-5.218 4.21 4.21 0 0 1 3.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 0 1 3.679-1.938m0-2a6.04 6.04 0 0 0-4.797 2.127 6.052 6.052 0 0 0-4.787-2.127A6.985 6.985 0 0 0 .5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 0 0 3.518 3.018 2 2 0 0 0 2.174 0 45.263 45.263 0 0 0 3.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 0 0-6.708-7.218Z">
+                  </path>
+                </svg>
+                <svg aria-label="Beğenmekten Vazgeç" class="_ab6- like" color="#ed4956" fill="#ed4956" height="24"
+                  role="img" viewBox="0 0 48 48" width="24">
+                  <path
+                    d="M34.6 3.1c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5s1.1-.2 1.6-.5c1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z">
+                  </path>
+                </svg>
+              </div>
+              <div class="commant-button"><svg aria-label="Yorum Yap" class="_ab6-" color="#262626" fill="#262626"
+                  height="24" role="img" viewBox="0 0 24 24" width="24">
+                  <path d="M20.656 17.008a9.993 9.993 0 1 0-3.59 3.615L22 22Z" fill="none" stroke="currentColor"
+                    stroke-linejoin="round" stroke-width="2"></path>
+                </svg></div>
+              <div class="share-button"><svg aria-label="Gönderi Paylaş" class="_ab6-" color="#262626" fill="#262626"
+                  height="24" role="img" viewBox="0 0 24 24" width="24">
+                  <line fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2" x1="22" x2="9.218"
+                    y1="3" y2="10.083"></line>
+                  <polygon fill="none" points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334"
+                    stroke="currentColor" stroke-linejoin="round" stroke-width="2"></polygon>
+                </svg></div>
+            </div>
+            <div class="post-save-button">
+              <svg aria-label="Kaydet" class="_ab6- none-save" color="#262626" fill="#262626" height="24" role="img"
+                viewBox="0 0 24 24" width="24">
+                <polygon fill="none" points="20 21 12 13.44 4 21 4 3 20 3 20 21" stroke="currentColor"
+                  stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polygon>
+              </svg>
+              <svg aria-label="Kaldır" class="_ab6- d-none" color="#262626" fill="#262626" height="24" role="img"
+                viewBox="0 0 24 24" width="24">
+                <path
+                  d="M20 22a.999.999 0 0 1-.687-.273L12 14.815l-7.313 6.912A1 1 0 0 1 3 21V3a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1Z">
+                </path>
+              </svg>
+            </div>
+          </div>
+          <div class="all-like">
+            <p>150.369 beğenme</p>
+          </div>
+          <div class="post-page-explanation">
+            <p>Galatasaray <span>Profesyonel Futbolcu Nicolo Zaniolo ve kulübü A.S.Roma S.r.l.ile oyuncunun transferi
+                konusunda anlaşmaya varılmıştır.
+                Buna göre, Futbolcunun eski kulübüne 15 Kasım 2023 tarihinden başlamak üzere 5 sezona yayılmış eşit
+                taksitte, 15.000.000 EUR kesin transfer bedeli ödenecektir.
+                Futbolcunun ileride bir başka kulübe satılması durumunda, elde edilecek kesin transfer bedeli karının
+                %20'si A.S. Roma S.r.l.'ye ödenecektir.
+                Futbolcu ile 2022-2023 sezonundan başlayarak 4.5 sezon için sözleşme imzalanmıştır.
+                Buna göre, Futbolcumuza 2022-2023 sezonu için net 900.000 EUR, diğer sezonlar için net 2.750.000 EUR
+                sezonluk maaş ödenecektir.
+                Ayrıca A.S. Roma S.r.l. ile tüm gelirleri depremzedelere bağışlanmak üzere 2023 yılı içerisinde hazırlık
+                müsabakası düzenlenmesi konusunda anlaşmaya varılmıştır.
+                Kamuoyuna saygıyla duyurulur.</span></p>
+          </div>
+          <div class="all-commant">
+            <p>120.000 yorumu gör</p>
+          </div>
+          <div class="add-commant">
+            <div class="my-profile-area">
+              <img src="./assets/img/my-profile.jpg" alt="">
+              <div class="add-commant-text">
+                <p>Yorum ekle</p>
+              </div>
+            </div>
+          </div>
+          <div class="post-date">
+            <p>2 GÜN ÖNCE</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+   
+
+    <div class="multiple-post-area">
+      <div class="profie-information-area">
+        <div class="profile">
+          <div class="profile-image-area">
+            <img src="./assets/img/gs-profile.jpg" alt="">
+          </div>
+          <div class="profile-name-area">
+            <p>Galatasaray</p>
+          </div>
+        </div>
+        <div class="share-modal-area">
+          <svg aria-label="Diğer seçenekler" class="_ab6-" color="#262626" fill="#262626" height="24" role="img"
+            viewBox="0 0 24 24" width="24">
+            <circle cx="12" cy="12" r="1.5"></circle>
+            <circle cx="6" cy="12" r="1.5"></circle>
+            <circle cx="18" cy="12" r="1.5"></circle>
+          </svg>
+        </div>
+      </div>
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <img src="./assets/img/gs-training-1.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="./assets/img/gs-training-2.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="./assets/img/gs-training-3.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="./assets/img/gs-training-4.jpg" alt="">
+        </div>
+      </div>
+      <div class="post-information-all-area">
+        <div class="post-like-save">
+          <div class="like-commant-share-buttons">
+            <div class="like-button">
+              <svg aria-label="Beğen" class="_ab6- none-like" color="#262626" fill="#262626" height="24" role="img"
+                viewBox="0 0 24 24" width="24">
+                <path
+                  d="M16.792 3.904A4.989 4.989 0 0 1 21.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 0 1 4.708-5.218 4.21 4.21 0 0 1 3.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 0 1 3.679-1.938m0-2a6.04 6.04 0 0 0-4.797 2.127 6.052 6.052 0 0 0-4.787-2.127A6.985 6.985 0 0 0 .5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 0 0 3.518 3.018 2 2 0 0 0 2.174 0 45.263 45.263 0 0 0 3.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 0 0-6.708-7.218Z">
+                </path>
+              </svg>
+              <svg aria-label="Beğenmekten Vazgeç" class="_ab6- like" color="#ed4956" fill="#ed4956" height="24"
+                role="img" viewBox="0 0 48 48" width="24">
+                <path
+                  d="M34.6 3.1c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5s1.1-.2 1.6-.5c1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z">
+                </path>
+              </svg>
+            </div>
+            <div class="commant-button"><svg aria-label="Yorum Yap" class="_ab6-" color="#262626" fill="#262626"
+                height="24" role="img" viewBox="0 0 24 24" width="24">
+                <path d="M20.656 17.008a9.993 9.993 0 1 0-3.59 3.615L22 22Z" fill="none" stroke="currentColor"
+                  stroke-linejoin="round" stroke-width="2"></path>
+              </svg></div>
+            <div class="share-button"><svg aria-label="Gönderi Paylaş" class="_ab6-" color="#262626" fill="#262626"
+                height="24" role="img" viewBox="0 0 24 24" width="24">
+                <line fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2" x1="22" x2="9.218"
+                  y1="3" y2="10.083"></line>
+                <polygon fill="none" points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334"
+                  stroke="currentColor" stroke-linejoin="round" stroke-width="2"></polygon>
+              </svg></div>
+          </div>
+          <div class="post-save-button">
+            <svg aria-label="Kaydet" class="_ab6- none-save" color="#262626" fill="#262626" height="24" role="img"
+              viewBox="0 0 24 24" width="24">
+              <polygon fill="none" points="20 21 12 13.44 4 21 4 3 20 3 20 21" stroke="currentColor"
+                stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polygon>
+            </svg>
+            <svg aria-label="Kaldır" class="_ab6- d-none" color="#262626" fill="#262626" height="24" role="img"
+              viewBox="0 0 24 24" width="24">
+              <path
+                d="M20 22a.999.999 0 0 1-.687-.273L12 14.815l-7.313 6.912A1 1 0 0 1 3 21V3a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1Z">
+              </path>
+            </svg>
+          </div>
+        </div>
+        <div class="all-like">
+          <p>150.369 beğenme</p>
+        </div>
+        <div class="post-page-explanation">
+          <p>Galatasaray <span>17.02.2023 tarihinde oynanacak olan FP Antalyaspor maçı için aslanlarımız
+              antremanda.</span></p>
+        </div>
+        <div class="all-commant">
+          <p>120.000 yorumu gör</p>
+        </div>
+        <div class="add-commant">
+          <div class="my-profile-area">
+            <img src="./assets/img/my-profile.jpg" alt="">
+            <div class="add-commant-text">
+              <p>Yorum ekle</p>
+            </div>
+          </div>
+        </div>
+        <div class="post-date">
+          <p>2 GÜN ÖNCE</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="video-post-area">
+      <div class="profie-information-area">
+        <div class="profile">
+          <div class="profile-image-area">
+            <img src="./assets/img/animal-profile.jpg" alt="">
+          </div>
+          <div class="profile-name-area">
+            <p>Animal Animation</p>
+          </div>
+        </div>
+        <div class="share-modal-area">
+          <svg aria-label="Diğer seçenekler" class="_ab6-" color="#262626" fill="#262626" height="24" role="img"
+            viewBox="0 0 24 24" width="24">
+            <circle cx="12" cy="12" r="1.5"></circle>
+            <circle cx="6" cy="12" r="1.5"></circle>
+            <circle cx="18" cy="12" r="1.5"></circle>
+          </svg>
+        </div>
+      </div>
+      <div class="post-body">
+        <div class="post-video-area">
+          <i class="fa fa-heart d-none" aria-hidden="true"></i>
+          <video id="video-muted" autoplay muted playsinline loop>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+          </video>
+        </div>
+        <div class="muted">
+          <button class="sound-off" type="button" onclick="disableMute()">
+            <svg aria-label="Ses kapatıldı." class="_ab6-" color="#ffffff" fill="#ffffff" height="12" role="img"
+              viewBox="0 0 48 48" width="12">
+              <path clip-rule="evenodd"
+                d="M1.5 13.3c-.8 0-1.5.7-1.5 1.5v18.4c0 .8.7 1.5 1.5 1.5h8.7l12.9 12.9c.9.9 2.5.3 2.5-1v-9.8c0-.4-.2-.8-.4-1.1l-22-22c-.3-.3-.7-.4-1.1-.4h-.6zm46.8 31.4-5.5-5.5C44.9 36.6 48 31.4 48 24c0-11.4-7.2-17.4-7.2-17.4-.6-.6-1.6-.6-2.2 0L37.2 8c-.6.6-.6 1.6 0 2.2 0 0 5.7 5 5.7 13.8 0 5.4-2.1 9.3-3.8 11.6L35.5 32c1.1-1.7 2.3-4.4 2.3-8 0-6.8-4.1-10.3-4.1-10.3-.6-.6-1.6-.6-2.2 0l-1.4 1.4c-.6.6-.6 1.6 0 2.2 0 0 2.6 2 2.6 6.7 0 1.8-.4 3.2-.9 4.3L25.5 22V1.4c0-1.3-1.6-1.9-2.5-1L13.5 10 3.3-.3c-.6-.6-1.5-.6-2.1 0L-.2 1.1c-.6.6-.6 1.5 0 2.1L4 7.6l26.8 26.8 13.9 13.9c.6.6 1.5.6 2.1 0l1.4-1.4c.7-.6.7-1.6.1-2.2z"
+                fill-rule="evenodd"></path>
+            </svg>
+          </button>
+          <button class="sound-on d-none" type="button" onclick="enableMute()">
+            <svg aria-label="Ses oynatılıyor" class="_ab6-" color="#ffffff" fill="#ffffff" height="12" role="img"
+              viewBox="0 0 24 24" width="12">
+              <path
+                d="M16.636 7.028a1.5 1.5 0 1 0-2.395 1.807 5.365 5.365 0 0 1 1.103 3.17 5.378 5.378 0 0 1-1.105 3.176 1.5 1.5 0 1 0 2.395 1.806 8.396 8.396 0 0 0 1.71-4.981 8.39 8.39 0 0 0-1.708-4.978Zm3.73-2.332A1.5 1.5 0 1 0 18.04 6.59 8.823 8.823 0 0 1 20 12.007a8.798 8.798 0 0 1-1.96 5.415 1.5 1.5 0 0 0 2.326 1.894 11.672 11.672 0 0 0 2.635-7.31 11.682 11.682 0 0 0-2.635-7.31Zm-8.963-3.613a1.001 1.001 0 0 0-1.082.187L5.265 6H2a1 1 0 0 0-1 1v10.003a1 1 0 0 0 1 1h3.265l5.01 4.682.02.021a1 1 0 0 0 1.704-.814L12.005 2a1 1 0 0 0-.602-.917Z">
+              </path>
+            </svg>
+          </button>
+        </div>
+        <div class="post-information-all-area">
+          <div class="post-like-save">
+            <div class="like-commant-share-buttons">
+              <div class="like-button">
+                <svg aria-label="Beğen" class="_ab6- none-like" color="#262626" fill="#262626" height="24" role="img"
+                  viewBox="0 0 24 24" width="24">
+                  <path
+                    d="M16.792 3.904A4.989 4.989 0 0 1 21.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 0 1 4.708-5.218 4.21 4.21 0 0 1 3.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 0 1 3.679-1.938m0-2a6.04 6.04 0 0 0-4.797 2.127 6.052 6.052 0 0 0-4.787-2.127A6.985 6.985 0 0 0 .5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 0 0 3.518 3.018 2 2 0 0 0 2.174 0 45.263 45.263 0 0 0 3.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 0 0-6.708-7.218Z">
+                  </path>
+                </svg>
+                <svg aria-label="Beğenmekten Vazgeç" class="_ab6- like" color="#ed4956" fill="#ed4956" height="24"
+                  role="img" viewBox="0 0 48 48" width="24">
+                  <path
+                    d="M34.6 3.1c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5s1.1-.2 1.6-.5c1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z">
+                  </path>
+                </svg>
+              </div>
+              <div class="commant-button"><svg aria-label="Yorum Yap" class="_ab6-" color="#262626" fill="#262626"
+                  height="24" role="img" viewBox="0 0 24 24" width="24">
+                  <path d="M20.656 17.008a9.993 9.993 0 1 0-3.59 3.615L22 22Z" fill="none" stroke="currentColor"
+                    stroke-linejoin="round" stroke-width="2"></path>
+                </svg></div>
+              <div class="share-button"><svg aria-label="Gönderi Paylaş" class="_ab6-" color="#262626" fill="#262626"
+                  height="24" role="img" viewBox="0 0 24 24" width="24">
+                  <line fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2" x1="22" x2="9.218"
+                    y1="3" y2="10.083"></line>
+                  <polygon fill="none" points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334"
+                    stroke="currentColor" stroke-linejoin="round" stroke-width="2"></polygon>
+                </svg></div>
+            </div>
+            <div class="post-save-button">
+              <svg aria-label="Kaydet" class="_ab6- none-save" color="#262626" fill="#262626" height="24" role="img"
+                viewBox="0 0 24 24" width="24">
+                <polygon fill="none" points="20 21 12 13.44 4 21 4 3 20 3 20 21" stroke="currentColor"
+                  stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polygon>
+              </svg>
+              <svg aria-label="Kaldır" class="_ab6- d-none" color="#262626" fill="#262626" height="24" role="img"
+                viewBox="0 0 24 24" width="24">
+                <path
+                  d="M20 22a.999.999 0 0 1-.687-.273L12 14.815l-7.313 6.912A1 1 0 0 1 3 21V3a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1Z">
+                </path>
+              </svg>
+            </div>
+          </div>
+          <div class="all-like">
+            <p>20.250 beğenme</p>
+          </div>
+          <div class="post-page-explanation">
+            <p>Animal Animation <span>So cute animation</span></p>
+          </div>
+          <div class="all-commant">
+            <p>1443 yorumu gör</p>
+          </div>
+          <div class="add-commant">
+            <div class="my-profile-area">
+              <img src="./assets/img/my-profile.jpg" alt="">
+              <div class="add-commant-text">
+                <p>Yorum ekle</p>
+              </div>
+            </div>
+          </div>
+          <div class="post-date">
+            <p>2 GÜN ÖNCE</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="footer-menu-area">
+      <div class="index-icon-area">
+        <svg aria-label="Ana Sayfa" class="_ab6-" color="#262626" fill="#262626" height="24" role="img"
+          viewBox="0 0 24 24" width="24">
+          <path
+            d="M22 23h-6.001a1 1 0 0 1-1-1v-5.455a2.997 2.997 0 1 0-5.993 0V22a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V11.543a1.002 1.002 0 0 1 .31-.724l10-9.543a1.001 1.001 0 0 1 1.38 0l10 9.543a1.002 1.002 0 0 1 .31.724V22a1 1 0 0 1-1 1Z">
+          </path>
+        </svg>
+      </div>
+      <div class="search-icon-area">
+        <svg aria-label="Keşfet" class="_ab6-" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24"
+          width="24">
+          <path d="M19 10.5A8.5 8.5 0 1 1 10.5 2a8.5 8.5 0 0 1 8.5 8.5Z" fill="none" stroke="currentColor"
+            stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+          <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            x1="16.511" x2="22" y1="16.511" y2="22"></line>
+        </svg>
+      </div>
+      <div class="reels-icon-area">
+        <svg aria-label="Reels" class="_ab6-" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24"
+          width="24">
+          <line fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2" x1="2.049" x2="21.95"
+            y1="7.002" y2="7.002"></line>
+          <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            x1="13.504" x2="16.362" y1="2.001" y2="7.002"></line>
+          <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            x1="7.207" x2="10.002" y1="2.11" y2="7.002"></line>
+          <path
+            d="M2 12.001v3.449c0 2.849.698 4.006 1.606 4.945.94.908 2.098 1.607 4.946 1.607h6.896c2.848 0 4.006-.699 4.946-1.607.908-.939 1.606-2.096 1.606-4.945V8.552c0-2.848-.698-4.006-1.606-4.945C19.454 2.699 18.296 2 15.448 2H8.552c-2.848 0-4.006.699-4.946 1.607C2.698 4.546 2 5.704 2 8.552Z"
+            fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+          <path
+            d="M9.763 17.664a.908.908 0 0 1-.454-.787V11.63a.909.909 0 0 1 1.364-.788l4.545 2.624a.909.909 0 0 1 0 1.575l-4.545 2.624a.91.91 0 0 1-.91 0Z"
+            fill-rule="evenodd"></path>
+        </svg>
+      </div>
+      <div class="message-icon-area">
+        <svg aria-label="Messenger" class="_ab6-" color="#262626" fill="#262626" height="24" role="img"
+          viewBox="0 0 24 24" width="24">
+          <path
+            d="M12.003 2.001a9.705 9.705 0 1 1 0 19.4 10.876 10.876 0 0 1-2.895-.384.798.798 0 0 0-.533.04l-1.984.876a.801.801 0 0 1-1.123-.708l-.054-1.78a.806.806 0 0 0-.27-.569 9.49 9.49 0 0 1-3.14-7.175 9.65 9.65 0 0 1 10-9.7Z"
+            fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="1.739"></path>
+          <path
+            d="M17.79 10.132a.659.659 0 0 0-.962-.873l-2.556 2.05a.63.63 0 0 1-.758.002L11.06 9.47a1.576 1.576 0 0 0-2.277.42l-2.567 3.98a.659.659 0 0 0 .961.875l2.556-2.049a.63.63 0 0 1 .759-.002l2.452 1.84a1.576 1.576 0 0 0 2.278-.42Z"
+            fill-rule="evenodd"></path>
+        </svg>
+      </div>
+      <div class="my-profile-icon-area">
+        <img src="./assets/img/my-profile.jpg" alt="">
+      </div>
+    </div>
+
+
+    <div class="backblackfilter"></div>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/gh/ramon82/zuck.js@master/dist/zuck.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"></script>
+    <script src="./assets/js/instagram.js"></script>
+
+</body>
+
+</html>
